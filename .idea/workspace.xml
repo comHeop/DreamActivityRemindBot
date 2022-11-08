@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d780135-5220-4cde-b9dd-1178faaf7d3c" name="Changes" comment="">
+    <list default="true" id="8d780135-5220-4cde-b9dd-1178faaf7d3c" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restart.py" beforeDir="false" afterPath="$PROJECT_DIR$/restart.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
