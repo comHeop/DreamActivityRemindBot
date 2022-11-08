@@ -12,4 +12,4 @@
 
 ## 文档
 
-请参阅 [Docs](https://v2.nonebot.dev/)
+请参阅 [nonebot2 安装与使用](https://blog.csdn.net/a1255652/article/details/117613037)
