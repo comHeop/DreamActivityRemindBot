@@ -13,3 +13,8 @@
 ## 文档
 
 请参阅 [nonebot2 安装与使用](https://blog.csdn.net/a1255652/article/details/117613037)
+
+## 指令
+nonebot2 `cd /QQ-bot/InceptionQQbot-master/ ; nb run`
+go-cqhttp `cd /QQ-bot/go-cqhttp/ ; go-cqhttp`
+定时重启 `cd /QQ-bot/ ; python restart.py`
