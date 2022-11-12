@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d780135-5220-4cde-b9dd-1178faaf7d3c" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间抢活动/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间抢活动/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间抢活动/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/唐秀厅.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/巫鑫.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/杨洪权.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/王秀旭.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间活动提醒/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间活动提醒/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间活动提醒/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间活动提醒/local.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间活动提醒/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/到梦空间活动提醒.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间活动提醒/到梦空间活动提醒.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gocq/data/image.db" beforeDir="false" afterPath="$PROJECT_DIR$/gocq/data/image.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT.bak" beforeDir="false" afterPath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/MANIFEST-000770" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gocq/session.token" beforeDir="false" afterPath="$PROJECT_DIR$/gocq/session.token" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +172,11 @@
           <url>file://$PROJECT_DIR$/cj/到梦空间活动提醒/到梦空间活动提醒.py</url>
           <line>44</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
