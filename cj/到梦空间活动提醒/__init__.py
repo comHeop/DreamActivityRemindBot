@@ -10,6 +10,7 @@ from nonebot.adapters.onebot.v11.message import Message
 from nonebot.adapters import Bot, Event
 from nonebot.rule import to_me
 
+from cj.到梦空间抢活动.config import updateConfiguration
 from cj.到梦空间活动提醒.到梦空间活动提醒 import activeQuery
 
 scheduler = require('nonebot_plugin_apscheduler').scheduler
@@ -89,6 +90,7 @@ qun = 760861972
 @scheduler.scheduled_job('cron', hour=23, minute=55)
 # 到梦空间活动提醒
 async def run_every_2_hour():
+    updateConfiguration()
     bot = nonebot.get_bot()  # 获取botid
     data = activeQuery()
     if data[0] == 1:
@@ -125,6 +127,7 @@ async def handle_first_receive(bot: Bot, event: Event, state: T_State):
 早7至晚12，每15分钟自动监测到梦空间新活动。\n
 指令：
 '/报名结果'|查询一次后销毁
+'/更新主设备'|更新监测用的cookie和data
 '/活动刷新'|提前检查是否有新活动
 '/日志'   |获取上一条日志记录
 '/关闭监测'|关闭监测活动
@@ -135,6 +138,7 @@ async def handle_first_receive(bot: Bot, event: Event, state: T_State):
 指令：
 '/查看参数'|查看所有参数
 '/清空参数'|清空所有参数
+'/添改登陆参数'|新增用户或修改登陆参数
 '/添加报名参数'|报名的包值
 '/添加脚本参数'|时间参与者值
 '/启动脚本'   |执行脚本
