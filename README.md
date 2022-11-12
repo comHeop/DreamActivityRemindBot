@@ -3,6 +3,7 @@
 2. 安装定时任务插件 `nb plugin install nonebot-plugin-docs`
 3. 安装go-cqgttp `https://github.com/Mrs4s/go-cqhttp/releases`
 4. 安装schedule `pip install schedule`
+
 ## 如何配置
 
 1. 进入新建文件夹输入 `go-cqhttp` 配置机器人.
