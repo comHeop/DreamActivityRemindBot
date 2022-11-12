@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import threading
 import requests
@@ -138,9 +139,10 @@ def activeRobberyMain(times, names):
 
 def dataEliminate():
     for name in os.listdir('cj/到梦空间抢活动/数据'):
-        txt = open('cj/到梦空间抢活动/数据/' + name, 'w', encoding='utf-8')
-        txt.write('')
-        txt.close()
+        if re.search(r".*txt", name):
+            txt = open('cj/到梦空间抢活动/数据/' + name, 'w', encoding='utf-8')
+            txt.write('')
+            txt.close()
     txt = open('cj/到梦空间抢活动/data.txt', 'w', encoding='utf-8')
     txt.write('')
     txt.close()
