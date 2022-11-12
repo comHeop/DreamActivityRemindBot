@@ -180,9 +180,10 @@ def updateConfiguration():
 
     with open('cj/到梦空间活动提醒/cookieData.txt', 'r') as f:  # 打开文件
         lines = f.readlines()  # 读取所有行
-        if lines != "":
-            first_line = lines[0]  # 取第一行
-            phoneID.headers_Apple['Cookie'] = 'acw_tc=' + first_line.replace('\n', '')
+        if not lines:
+            lines = ['0']
+        first_line = lines[0]  # 取第一行
+        phoneID.headers_Apple['Cookie'] = 'acw_tc=' + first_line.replace('\n', '')
 
 
 updateConfiguration()
