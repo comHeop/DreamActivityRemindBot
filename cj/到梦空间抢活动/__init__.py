@@ -161,6 +161,9 @@ async def _(ity: str = ArgPlainText('city')):
         txt = open('cj/到梦空间抢活动/数据/login/' + parameterList[0] + '.txt', 'w', encoding='utf-8')
         txt.write(parameterList[1])
         txt.close()
+        txt = open('cj/到梦空间抢活动/数据/' + parameterList[0] + '.txt', 'w', encoding='utf-8')
+        txt.write(parameterList[1])
+        txt.close()
         await tjyh.finish('成功！')
     else:
         await tjyh.finish('输入不合法！请重新输入！')

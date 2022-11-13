@@ -206,7 +206,7 @@ def updateConfiguration():
     for name in os.listdir('cj/到梦空间抢活动/数据/login'):
         with open('cj/到梦空间抢活动/数据/' + name, encoding='utf-8') as file:
             content = file.read()
-            if content != '':
+            if content != ',':
                 dataList = re.split(',', content)
                 parameter.signUp_data_s[dataList[0]] = 'd=' + dataList[1]
             else:
