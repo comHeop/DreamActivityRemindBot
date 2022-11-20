@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8d780135-5220-4cde-b9dd-1178faaf7d3c" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间抢活动/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/000778.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT.bak" beforeDir="false" afterPath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/gocq/data/leveldb-v3/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/MANIFEST-000780" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/session.token" beforeDir="false" afterPath="$PROJECT_DIR$/gocq/session.token" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +45,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Python.bot">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="模块测试" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QQbot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -50,7 +57,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cj/到梦空间抢活动/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cj/到梦空间抢活动/模块测试.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Active_robbery" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="QQbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cj/到梦空间抢活动" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,27 +143,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="cj.到梦空间抢活动.模块测试.MyTestCase.test_something 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="QQbot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cj/到梦空间抢活动" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;cj.到梦空间抢活动.模块测试.MyTestCase.test_something&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.bot" />
-        <item itemvalue="Python.config" />
+        <item itemvalue="Python.Active_robbery" />
+        <item itemvalue="Python.模块测试" />
         <item itemvalue="Python 测试.Python 测试 (模块测试.py 内)" />
-        <item itemvalue="Python.__init__" />
-        <item itemvalue="Python 测试.cj.到梦空间抢活动.模块测试.MyTestCase.test_something 的 Python 测试" />
+        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -170,8 +184,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="3" />
+          <line>67</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

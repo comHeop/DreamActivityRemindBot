@@ -6,7 +6,6 @@ import requests
 import time
 from cj.到梦空间抢活动.config import parameter, phoneID
 
-
 # 全局变量收集多线程返回值
 signUp_values = []
 login_values = []
@@ -14,21 +13,21 @@ threads = []  # 创建一个进程池
 
 
 def login(data, n, headers):
-    # r = {'code': '100', 'data': {'getResult': True, 'signUpId': '3_6353105_45057137'}}  # 本地测试用例
-    r = requests.post(url='https://appdmkj.5idream.net/v2/login/phone', headers=headers, data=data).json()
+    r = {'code': '100', 'data': {'getResult': True, 'signUpId': '3_6353105_45057137'}}  # 本地测试用例
+    # r = requests.post(url='https://appdmkj.5idream.net/v2/login/phone', headers=headers, data=data).json()
     if r['code'] == '100':
         login_values.append([str(n) + ' ：' + ' !!模拟登陆成功!!' + '\n',
-                              str(int(time.time())) + str(n) + '抢活动脚本 ' + ' !!模拟登陆成功!!' + str(r) + '\n'])
+                             str(int(time.time())) + str(n) + '抢活动脚本 ' + ' !!模拟登陆成功!!' + str(r) + '\n'])
         return True
     else:
         login_values.append([str(n) + ' ：' + ' ??模拟登陆失败??' + '\n',
-                              str(int(time.time())) + str(n) + '抢活动脚本 ' + ' ??模拟登陆失败??' + str(r) + '\n'])
+                             str(int(time.time())) + str(n) + '抢活动脚本 ' + ' ??模拟登陆失败??' + str(r) + '\n'])
         return False
 
 
 def signUp(data, n, headers):
-    # r = {'code': '200', 'data': {'getResult': True, 'signUpId': '3_6353105_45057137'}}      # 本地测试用例
-    r = requests.post(url='https://appdmkj.5idream.net/v2/signup/submit', headers=headers, data=data).json()
+    r = {'code': '200', 'data': {'getResult': True, 'signUpId': '3_6353105_45057137'}}      # 本地测试用例
+    # r = requests.post(url='https://appdmkj.5idream.net/v2/signup/submit', headers=headers, data=data).json()
     # 判断返回结果
     if r['code'] == '100':
         signUp_values.append([str(n) + ' ：' + ' !!活动报名成功!!' + '\n',
@@ -80,7 +79,7 @@ def activeRobberyMain(times, names):
             print(login_values[num][0])
             time.sleep(2)
             num += 1
-        log_seva(login_values, 1)  # 登陆结果储存进日志
+        # log_seva(login_values, 1)  # 登陆结果储存进日志
         if loginResult_x == 1:
             return '有用户登陆失败，取消执行。详情见日志。'
     else:
@@ -147,6 +146,10 @@ def dataEliminate():
     txt.write('')
     txt.close()
 
+
 # if __name__ == "__main__":
 #     buy_times = input("请输入活动报名时间(例如格式：2022-10-28 14:35:00):")  # 时间输入
 #     print(main(buy_times, ['杨洪权', '王秀旭', '唐秀厅', '巫鑫']))     # '杨洪权', '王秀旭', '唐秀厅', '巫鑫'
+
+if __name__ == '__main__':
+    activeRobberyMain('2022-11-14 18:30:00', ['杨洪权', '唐秀厅', '巫鑫'])

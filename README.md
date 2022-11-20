@@ -1,8 +1,10 @@
 # 初始机器人
 1. 安装nonebot2 `pip install nb-cli`
-2. 安装定时任务插件 `nb plugin install nonebot-plugin-docs`
+2. 安装定时任务插件 `nb plugin install nonebot-plugin-apscheduler`
 3. 安装go-cqgttp `https://github.com/Mrs4s/go-cqhttp/releases`
 4. 安装schedule `pip install schedule`
+问题：”No module named 'nonebot.adapters.onebot'“
+`pip install nonebot-adapter-onebot`
 
 ## 如何配置
 
@@ -33,3 +35,8 @@ QQ中私聊或@机器人回复 `/帮助` 查看详细指令
 通过模拟post请求发送报名包
 想添加新报名用户需要在目录下的 ”数据“ 文件夹中创建相应名称的txt文件。同时为了保证发送时候不出现堵塞导致报名失败，请在 “config.py” 中增加phoneID类下的headers_Android参数，请保证其数量至少>=报名人数。headers_Apple参数为主设备使用参数。
 “Active_robbery.py” 中 65 与 91 行可以设定不需要进行模拟登陆的人员。（一般来说主设备不要重复登陆）
+
+# 服务器持续运行
+”cd“ 到 ”/QQ-bot/InceptionQQbot-master/“ 执行 `nohup nb run &`
+”cd“ 到 ”/QQ-bot/go-cqhttp/“ 执行 `nohup go-cqhttp &`
+”cd“ 到 ”/QQ-bot/“ 执行 `nohup python restart.py &`

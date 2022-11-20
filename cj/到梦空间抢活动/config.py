@@ -191,9 +191,15 @@ class phoneID:
 
 class parameter:
     # 登陆参数
-    login_s = {}
+    login_s = {
+        '杨洪权': '555',
+        '巫鑫': '000',
+        '唐秀厅': '999'
+    }
     # 报名参数
-    signUp_data_s = {}
+    signUp_data_s = {'杨洪权': '555',
+                     '巫鑫': '000',
+                     '唐秀厅': '999'}
 
 
 class startUp:
@@ -229,5 +235,4 @@ def updateConfiguration():
         first_line = lines[0]  # 取第一行
         phoneID.headers_Apple['Cookie'] = 'acw_tc=' + first_line.replace('\n', '')
 
-
-updateConfiguration()
+# updateConfiguration()
