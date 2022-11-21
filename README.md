@@ -37,6 +37,6 @@ QQ中私聊或@机器人回复 `/帮助` 查看详细指令
 “Active_robbery.py” 中 65 与 91 行可以设定不需要进行模拟登陆的人员。（一般来说主设备不要重复登陆）
 
 # 服务器持续运行
-”cd“ 到 ”/QQ-bot/InceptionQQbot-master/“ 执行 `nohup nb run &`
+”cd“ 到 ”/QQ-bot/InceptionQQbot-master/“ 执行 `nohup nb run &` 
 ”cd“ 到 ”/QQ-bot/go-cqhttp/“ 执行 `nohup go-cqhttp &`
 ”cd“ 到 ”/QQ-bot/“ 执行 `nohup python restart.py &`
