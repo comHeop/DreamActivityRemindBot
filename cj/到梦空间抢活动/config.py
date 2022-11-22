@@ -8,7 +8,7 @@ class phoneID:
     # 手机
     headers_Apple = {
         'Cookie': '2f624a4416673955121362493e32ef3edd100eff7f8774797afb2cb8944268',
-        'Standardua': json.dumps({
+        'standardUA': json.dumps({
             "uuid": "678b0e7592a8489898c8b7ee8a45c6a3",
             "system": "iOS",
             "version": "4.4.7",
@@ -24,168 +24,183 @@ class phoneID:
             "hardware": "D53gAP,iPhone13,2,arm64,127870980096,-445497344",
             "startTime": str(int(time.time()))
         }),
+        'Host': 'appdmkj.5idream.net',
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate',
+        'Connection': 'keep-alive',
         'User-Agent': 'DMKJ/4.4.7 (iPhone; iOS 16.0.2; Scale/3.00)',
         'Accept-Language': 'zh-Hans-CN;q=1',
         'Content-Length': '894',
-        'Connection': 'close'
+        'Accept-Encoding': 'gzip, deflate, br'
     }
     headers_Android = [{
-        'Standardua': json.dumps({
+        'standardUA': json.dumps({
             "channelName": "dmkj_Android",
             "countryCode": "CN",
-            "createTime": '1666416798936',
-            "device": "Xiaomi M2007J22C",
+            "createTime": '1669118437742',
+            "device": "Sony H9493",
             "hardware": "qcom",
-            "jPushId": "190e35f7e0af018ab4f",
-            "modifyTime": '1666416798936',
-            "operator": "%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8",
-            "screenResolution": "900-1600",
+            "jPushId": "1507bfd3f72c6850f06",
+            "modifyTime": '1669122025036',
+            "operator": "%E4%B8%AD%E5%9B%BD%E8%81%94%E9%80%9A",
+            "screenResolution": "1440-2696",
             "startTime": str(int(round(time.time() * 1000))),
-            "sysVersion": "Android 25 7.1.2",
+            "sysVersion": "Android 28 9",
             "system": "android",
-            "uuid": "080027333A0F",
-            "version": "4.4.7"}
+            "uuid": "38786286573C",
+            "version": "4.4.7"
+        }
         ),
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': '554',
-        'Accept-Encoding': 'gzip, deflate',
-        'User-Agent': 'okhttp/3.11.0',
-        'Connection': 'close'
+        'Content-Length': '605',
+        'Host': 'appdmkj.5idream.net',
+        'Connection': 'Keep-Alive',
+        'Accept-Encoding': 'gzip',
+        'User-Agent': 'okhttp/3.11.0'
     }, {
         'Standardua': json.dumps({
             "channelName": "dmkj_Android",
             "countryCode": "CN",
-            "createTime": '1666776342256',
-            "device": "samsung SM-G955N",
-            "hardware": "samsungexynox8895",
+            "createTime": '1669118437742',
+            "device": "vivo V2020A",
+            "hardware": "V2020A",
             "jPushId": "",
-            "modifyTime": '1666776342256',
-            "operator": "%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8",
-            "screenResolution": "720-1280",
+            "modifyTime": '1669122025036',
+            "operator": "%E6%9C%AA%E7%9F%A5",
+            "screenResolution": "1440-2696",
             "startTime": str(int(round(time.time() * 1000))),
-            "sysVersion": "Android 25 7.1.2",
+            "sysVersion": "Android 28 10",
             "system": "android",
-            "uuid": "0800270676FA",
-            "version": "4.4.7"}
+            "uuid": "38786286573C",
+            "version": "4.4.7"
+        }
         ),
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': '554',
-        'Accept-Encoding': 'gzip, deflate',
-        'User-Agent': 'okhttp/3.11.0',
-        'Connection': 'close'
-    }, {
-        'Standardua': json.dumps(
-            {"channelName": "dmkj_Android",
-             "countryCode": "CN",
-             "createTime": '1666778403374',
-             "device": "samsung SM-G955N",
-             "hardware": "samsungexynox8895",
-             "jPushId": "",
-             "modifyTime": '1666778403374',
-             "operator": "%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8",
-             "screenResolution": "720-1280",
-             "startTime": str(int(round(time.time() * 1000))),
-             "sysVersion": "Android 22 5.1.1",
-             "system": "android",
-             "uuid": "354730374374423",
-             "version": "4.4.7"}
-        ),
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': '554',
-        'Accept-Encoding': 'gzip, deflate',
-        'User-Agent': 'okhttp/3.11.0',
-        'Connection': 'close'
+        'Content-Length': '940',
+        'Host': 'appdmkj.5idream.net',
+        'Connection': 'Keep-Alive',
+        'Accept-Encoding': 'gzip',
+        'User-Agent': 'okhttp/3.11.0'
     }, {
         'Standardua': json.dumps({
             "channelName": "dmkj_Android",
             "countryCode": "CN",
-            "createTime": '1666416186452',
-            "device": "samsung SM-G10",
-            "hardware": "samsungexynox",
-            "jPushId": "190e35f7e0af018ab4f",
-            "modifyTime": '1666416798936',
-            "operator": "%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8",
-            "screenResolution": "900-1600",
+            "createTime": '1669118437742',
+            "device": "Xiaomi Redmi K30",
+            "hardware": "Redmi K30",
+            "jPushId": "",
+            "modifyTime": '1669122025036',
+            "operator": "%E6%9C%AA%E7%9F%A5",
+            "screenResolution": "1440-2696",
             "startTime": str(int(round(time.time() * 1000))),
-            "sysVersion": "Android 25 7.1.2",
+            "sysVersion": "Android 28 8.0",
             "system": "android",
-            "uuid": "080027043A0F",
-            "version": "4.4.7"}
+            "uuid": "38786286573C",
+            "version": "4.4.7"
+        }
         ),
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': '554',
-        'Accept-Encoding': 'gzip, deflate',
-        'User-Agent': 'okhttp/3.11.0',
-        'Connection': 'close'
+        'Content-Length': '940',
+        'Host': 'appdmkj.5idream.net',
+        'Connection': 'Keep-Alive',
+        'Accept-Encoding': 'gzip',
+        'User-Agent': 'okhttp/3.11.0'
     }, {
         'Standardua': json.dumps({
             "channelName": "dmkj_Android",
             "countryCode": "CN",
-            "createTime": '1666416186452',
-            "device": "samsung SM-G2",
-            "hardware": "samsungexynox",
-            "jPushId": "190e35f7e0af018ab4f",
-            "modifyTime": '1666416698745',
-            "operator": "%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8",
-            "screenResolution": "1600-900",
+            "createTime": '1669118437742',
+            "device": "vivo V1829A",
+            "hardware": "V1829A",
+            "jPushId": "",
+            "modifyTime": '1669122025036',
+            "operator": "%E6%9C%AA%E7%9F%A5",
+            "screenResolution": "1440-2696",
             "startTime": str(int(round(time.time() * 1000))),
-            "sysVersion": "Android 25 7.1.2",
+            "sysVersion": "Android 28 8.0",
             "system": "android",
-            "uuid": "080027343A0F",
-            "version": "4.4.7"}
+            "uuid": "38786286573C",
+            "version": "4.4.7"
+        }
         ),
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': '554',
-        'Accept-Encoding': 'gzip, deflate',
-        'User-Agent': 'okhttp/3.11.0',
-        'Connection': 'close'
+        'Content-Length': '940',
+        'Host': 'appdmkj.5idream.net',
+        'Connection': 'Keep-Alive',
+        'Accept-Encoding': 'gzip',
+        'User-Agent': 'okhttp/3.11.0'
     }, {
         'Standardua': json.dumps({
             "channelName": "dmkj_Android",
             "countryCode": "CN",
-            "createTime": '1666417896452',
-            "device": "samsung SM-G1",
-            "hardware": "samsungexynox2",
-            "jPushId": "190e35f7e0af018ab4f",
-            "modifyTime": '166641788745',
-            "operator": "%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8",
-            "screenResolution": "1600-900",
+            "createTime": '1669118437742',
+            "device": "HUAWEI AKA-AL10",
+            "hardware": "AKA-AL10",
+            "jPushId": "",
+            "modifyTime": '1669122025036',
+            "operator": "%E6%9C%AA%E7%9F%A5",
+            "screenResolution": "1440-2696",
             "startTime": str(int(round(time.time() * 1000))),
-            "sysVersion": "Android 25 7.1.2",
+            "sysVersion": "Android 28 10",
             "system": "android",
-            "uuid": "080025236A0F",
-            "version": "4.4.7"}
+            "uuid": "38786286573C",
+            "version": "4.4.7"
+        }
         ),
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': '554',
-        'Accept-Encoding': 'gzip, deflate',
-        'User-Agent': 'okhttp/3.11.0',
-        'Connection': 'close'
+        'Content-Length': '940',
+        'Host': 'appdmkj.5idream.net',
+        'Connection': 'Keep-Alive',
+        'Accept-Encoding': 'gzip',
+        'User-Agent': 'okhttp/3.11.0'
     }, {
         'Standardua': json.dumps({
             "channelName": "dmkj_Android",
             "countryCode": "CN",
-            "createTime": '1666685246452',
-            "device": "samsung1",
-            "hardware": "samsungexynox1",
-            "jPushId": "190e35f7e0af018ab4f",
-            "modifyTime": '166696488745',
-            "operator": "%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8",
-            "screenResolution": "1600-900",
+            "createTime": '1669118437742',
+            "device": "samsung SM-G9500",
+            "hardware": "SM-G9500",
+            "jPushId": "",
+            "modifyTime": '1669122025036',
+            "operator": "%E6%9C%AA%E7%9F%A5",
+            "screenResolution": "1440-2696",
             "startTime": str(int(round(time.time() * 1000))),
-            "sysVersion": "Android 25 7.1.2",
+            "sysVersion": "Android 28 7.1",
             "system": "android",
-            "uuid": "080026548A0F",
-            "version": "4.4.7"}
+            "uuid": "38786286573C",
+            "version": "4.4.7"
+        }
         ),
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': '554',
-        'Accept-Encoding': 'gzip, deflate',
-        'User-Agent': 'okhttp/3.11.0',
-        'Connection': 'close'
+        'Content-Length': '940',
+        'Host': 'appdmkj.5idream.net',
+        'Connection': 'Keep-Alive',
+        'Accept-Encoding': 'gzip',
+        'User-Agent': 'okhttp/3.11.0'
+    }, {
+        'Standardua': json.dumps({
+            "channelName": "dmkj_Android",
+            "countryCode": "CN",
+            "createTime": '1669118437742',
+            "device": "QIKU 8676-M01",
+            "hardware": "8676-M01",
+            "jPushId": "",
+            "modifyTime": '1669122025036',
+            "operator": "%E6%9C%AA%E7%9F%A5",
+            "screenResolution": "1440-2696",
+            "startTime": str(int(round(time.time() * 1000))),
+            "sysVersion": "Android 28 11",
+            "system": "android",
+            "uuid": "38786286573C",
+            "version": "4.4.7"
+        }
+        ),
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Length': '940',
+        'Host': 'appdmkj.5idream.net',
+        'Connection': 'Keep-Alive',
+        'Accept-Encoding': 'gzip',
+        'User-Agent': 'okhttp/3.11.0'
     }]
 
 
@@ -212,7 +227,7 @@ def updateConfiguration():
     for name in os.listdir('cj/到梦空间抢活动/数据/login'):
         with open('cj/到梦空间抢活动/数据/' + name, encoding='utf-8') as file:
             content = file.read()
-            if content != ',':
+            if ',' in content:
                 dataList = re.split(',', content)
                 parameter.signUp_data_s[dataList[0]] = 'd=' + dataList[1]
             else:
