@@ -3335,3 +3335,12 @@
 16:37:51.251106 db@janitor F·5 G·1
 16:37:51.251106 db@janitor removing table-778
 16:37:51.251106 db@open done T·264.8324ms
+=============== Nov 26, 2022 (CST) ===============
+13:13:17.855667 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:13:17.899396 version@stat F·[1 1] S·124KiB[407B 124KiB] Sc·[0.25 0.00]
+13:13:17.899396 db@open opening
+13:13:17.899396 journal@recovery F·1
+13:13:17.899396 journal@recovery recovering @783
+13:13:17.899912 version@stat F·[1 1] S·124KiB[407B 124KiB] Sc·[0.25 0.00]
+13:13:18.163157 db@janitor F·4 G·0
+13:13:18.163157 db@open done T·263.7608ms

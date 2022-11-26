@@ -13,8 +13,8 @@ threads = []  # 创建一个进程池
 
 
 def login(data, n, headers):
-    r = {'code': '100', 'data': {'getResult': True, 'signUpId': '3_6353105_45057137'}}  # 本地测试用例
-    # r = requests.post(url='https://appdmkj.5idream.net/v2/login/phone', headers=headers, data=data).json()
+    # r = {'code': '100', 'data': {'getResult': True, 'signUpId': '3_6353105_45057137'}}  # 本地测试用例
+    r = requests.post(url='https://appdmkj.5idream.net/v2/login/phone', headers=headers, data=data).json()
     if r['code'] == '100':
         login_values.append([str(n) + ' ：' + ' !!模拟登陆成功!!' + '\n',
                              str(int(time.time())) + str(n) + '抢活动脚本 ' + ' !!模拟登陆成功!!' + str(r) + '\n'])
@@ -26,8 +26,8 @@ def login(data, n, headers):
 
 
 def signUp(data, n, headers):
-    r = {'code': '200', 'data': {'getResult': True, 'signUpId': '3_6353105_45057137'}}      # 本地测试用例
-    # r = requests.post(url='https://appdmkj.5idream.net/v2/signup/submit', headers=headers, data=data).json()
+    # r = {'code': '200', 'data': {'getResult': True, 'signUpId': '3_6353105_45057137'}}      # 本地测试用例
+    r = requests.post(url='https://appdmkj.5idream.net/v2/signup/submit', headers=headers, data=data).json()
     # 判断返回结果
     if r['code'] == '100':
         signUp_values.append([str(n) + ' ：' + ' !!活动报名成功!!' + '\n',

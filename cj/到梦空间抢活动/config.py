@@ -237,7 +237,7 @@ def updateConfiguration():
     for name in os.listdir('cj/到梦空间抢活动/数据/login'):
         with open('cj/到梦空间抢活动/数据/login/' + name, encoding='utf-8') as file:
             content = file.read()
-            if ',' in content:
+            if '=' in content:
                 parameter.login_s[name.replace('.txt', '')] = 'd=' + content
                 file.close()
             else:
