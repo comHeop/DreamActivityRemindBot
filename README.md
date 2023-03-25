@@ -29,7 +29,7 @@ QQ中私聊或@机器人回复 `/帮助` 查看详细指令
 # 插件|到梦空间活动提醒
 通过模拟post请求检查活动
 请求中headers与data需要抓包获取，修改到 “到梦空间活动提醒.py” 中（主设备用户）
-“__init__.py” 中 `@scheduler.scheduled_job('cron', hour=x, minute=xx)` xx是规定了定时执行的时间。`qun = aaaaaaaa` aa...规定了消息提醒的群号。
+“__init__.py” 中 `@scheduler.scheduled_job('cron', hour=x, minute=xx)` xx是规定了定时执行的时间。`qun = [aaaaaaaa,bbbbbb]` aa...规定了消息提醒的群号。可多个群同时发时延5s每个
 
 # 插件|到梦空间抢活动
 通过模拟post请求发送报名包

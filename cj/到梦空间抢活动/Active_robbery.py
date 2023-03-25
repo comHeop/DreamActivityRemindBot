@@ -6,11 +6,6 @@ import requests
 import time
 from cj.到梦空间抢活动.config import parameter, phoneID
 
-# 全局变量收集多线程返回值
-signUp_values = []
-login_values = []
-threads = []  # 创建一个进程池
-
 
 def login(data, n, headers):
     # r = {'code': '100', 'data': {'getResult': True, 'signUpId': '3_6353105_45057137'}}  # 本地测试用例
@@ -52,6 +47,11 @@ def concurrency_signUp(data, n, headers):
 
 
 def activeRobberyMain(times, names):
+    global threads, login_values, signUp_values
+    # 全局变量收集多线程返回值
+    signUp_values = []
+    login_values = []
+    threads = []  # 创建一个进程池
     # 检查是否大于当前日期
     times_s = time.strptime(times, '%Y-%m-%d %H:%M:%S')
     times_s = time.mktime(times_s)
