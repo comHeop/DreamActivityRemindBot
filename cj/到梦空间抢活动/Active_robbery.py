@@ -2,9 +2,32 @@ import os
 import re
 import sys
 import threading
+
+import pymysql
 import requests
 import time
 from cj.到梦空间抢活动.config import parameter, phoneID
+
+host = 'localhost'
+user = 'root'
+password = 'e234e7ccbfd6a1ec'
+database = 'qryhqkim'
+
+
+def signkeyDeleteSql(hdid):
+    """
+    删除指定活动的signkey
+    :param hdid: 活动id
+    :return: 0
+    """
+    myconn = pymysql.connect(host=host, user=user, password=password, database=database,
+                             charset='utf8')
+    mycursor = myconn.cursor()  # 创建游标对象
+
+    sql = 'DELETE FROM `dmkjsignkey` WHERE `hd_id`= %s'
+    mycursor.execute(sql, hdid)
+    myconn.commit()  # 存储游标结果
+    return 0
 
 
 def login(data, n, headers):

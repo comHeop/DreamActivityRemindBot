@@ -8,7 +8,7 @@ from nonebot.params import ArgPlainText, CommandArg
 from nonebot.adapters.onebot.v11 import Message, PRIVATE_FRIEND
 from nonebot.rule import to_me
 
-from cj.到梦空间抢活动.Active_robbery import activeRobberyMain, dataEliminate
+from cj.到梦空间抢活动.Active_robbery import activeRobberyMain, dataEliminate, signkeyDeleteSql
 from cj.到梦空间抢活动.config import updateConfiguration
 
 wettr = on_keyword(['tjbmcs', '/添加报名参数'], permission=PRIVATE_FRIEND, priority=2)
@@ -167,3 +167,21 @@ async def _(ity: str = ArgPlainText('city')):
         await tjyh.finish('成功！')
     else:
         await tjyh.finish('输入不合法！请重新输入！')
+
+
+deleteKey = on_keyword(['schdkey', '/删除活动key'], permission=PRIVATE_FRIEND, priority=2)
+
+
+@deleteKey.handle()
+async def _handle(matcher: Matcher, ity: Message = CommandArg()):
+    if ity.extract_plain_text() and ity.extract_plain_text()[0] != '_':
+        matcher.set_arg('city', ity)
+
+
+@deleteKey.got('city', prompt='输入活动ID：xxxxxxx(七位数字)')
+async def _(ity: str = ArgPlainText('city')):
+    if len(ity) == 7:
+        signkeyDeleteSql(int(ity))
+        await deleteKey.finish('删除成功！')
+    else:
+        await deleteKey.finish('输入不合法！请重新输入！')

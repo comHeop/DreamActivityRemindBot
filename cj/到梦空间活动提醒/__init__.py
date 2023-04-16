@@ -11,12 +11,15 @@ from nonebot.adapters import Bot, Event
 from nonebot.rule import to_me
 
 from cj.到梦空间抢活动.config import updateConfiguration
+from cj.到梦空间活动提醒.Active_sql_folder import createHtml, deleteOutOfDateHtml, pastActivitiesDeleteSql, informationWriteSql, activityStatistics
 from cj.到梦空间活动提醒.到梦空间活动提醒 import activeQuery
+
 
 scheduler = require('nonebot_plugin_apscheduler').scheduler
 
-qun_s = [760861972,754079071,392838485]
+# qun_s = [392838485]
 
+qun_s = [760861972,754079071,392838485]
 
 
 # 设置在几点启动脚本
@@ -334,6 +337,7 @@ async def run_every_2_hour():
         for qun in qun_s:
             await bot.send_group_msg(group_id=qun, message=data[1])
             time.sleep(5)
+    activityStatistics()
 
 
 # on_keyword()为针对命令型事件的响应，即以配置的命令前缀为开头的语句
@@ -349,13 +353,14 @@ async def jrrp_handle(bot: Bot, event: Event):
         for qun in qun_s:
             await bot.send_group_msg(group_id=qun, message=data[1])
             time.sleep(5)
-        data = open('cj/到梦空间活动提醒/local.txt', encoding='utf-8')
-        knownActivities = data.read()
-        data.close()
+        txt_data = open('cj/到梦空间活动提醒/local.txt', encoding='utf-8')
+        knownActivities = txt_data.read()
+        txt_data.close()
         time.sleep(2)
         await sx.finish(knownActivities)
     else:
         await sx.finish('无活动更新')
+    activityStatistics()
 
 
 inception_help = on_keyword(["/帮助"], rule=to_me(), priority=1)
@@ -383,6 +388,7 @@ async def handle_first_receive(bot: Bot, event: Event, state: T_State):
 '/添加报名参数'|报名的包值
 '/添加脚本参数'|时间参与者值
 '/启动脚本'   |执行脚本
+'/删除活动key'   |删除活动signkey
 \n注：启动报名前建议关闭监测活动
     """))
 
@@ -427,12 +433,13 @@ async def handle_first_receive(bot: Bot, event: Event, state: T_State):
     await offMonitoring.finish(Message('自动监测功能已经关闭'))
 
 
-offMonitoring = on_keyword(["kqjc", '/开启监测'], permission=PRIVATE_FRIEND, priority=9)
+onMonitoring = on_keyword(["kqjc", '/开启监测'], permission=PRIVATE_FRIEND, priority=9)
 
 
-@offMonitoring.handle()
+@onMonitoring.handle()
 async def handle_first_receive(bot: Bot, event: Event, state: T_State):
     t = open('cj/到梦空间活动提醒/config.txt', 'w', encoding='utf-8')
     t.write('1')
     t.close()
-    await offMonitoring.finish(Message('自动监测功能已经开启'))
+    await onMonitoring.finish(Message('自动监测功能已经开启'))
+
