@@ -5,11 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d780135-5220-4cde-b9dd-1178faaf7d3c" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/cj/dream_remind/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cj/dream_remind/method.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间抢活动/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间活动提醒/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/到梦空间活动提醒.py" beforeDir="false" afterPath="$PROJECT_DIR$/cj/到梦空间活动提醒/到梦空间活动提醒.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/login/唐秀厅.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/login/巫鑫.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/login/杨洪权.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/login/王秀旭.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/唐秀厅.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/巫鑫.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/杨洪权.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/王秀旭.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/Active_sql_folder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/cookieData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/local.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/到梦空间活动提醒.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/外部插件数据/抢活动结果.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Unit Test" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -39,34 +60,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../chatgpt_academic-master" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\QQbot" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.bot">
-    <configuration name="Active_robbery" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="QQbot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cj/到梦空间抢活动" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test">
     <configuration name="Active_sql_folder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QQbot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,27 +81,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cj/到梦空间活动提醒/Active_sql_folder.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="QQbot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cj/到梦空间二维码共享" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cj/到梦空间二维码共享/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +110,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="restart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QQbot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +118,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cj/到梦空间活动提醒" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/restart.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cj/到梦空间活动提醒/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,13 +131,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python 测试 (D:/QQbot/cj/到梦空间活动提醒/test.py 内)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QQbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cj/dream_remind" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/cj/到梦空间活动提醒/test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test.MyTestCase.test_something 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QQbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cj/dream_remind" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.MyTestCase.test_something&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python 测试.test.MyTestCase.test_something 的 Python 测试" />
+        <item itemvalue="Python 测试.Python 测试 (D:/QQbot/cj/到梦空间活动提醒/test.py 内)" />
         <item itemvalue="Python.bot" />
         <item itemvalue="Python.Active_sql_folder" />
-        <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.restart" />
-        <item itemvalue="Python.Active_robbery" />
       </list>
     </recent_temporary>
   </component>

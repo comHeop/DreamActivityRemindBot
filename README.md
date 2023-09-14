@@ -1,42 +1,127 @@
-# 初始机器人
-1. 安装nonebot2 `pip install nb-cli`
+# 到梦空间活动提醒插件
+***
+这是一个基于nonebot2的插件，原理与网络抓包相同。
+
+后端使用php可将前后端分离部署(集群自行配置负载均衡)
+
+目前实现了 支持多校、多群发送、参数失效提醒、参数更新、开关功能
+
+### 安装配置
+
+1. 安装nonebot2 [请参阅](https://blog.csdn.net/a1255652/article/details/117613037)
 2. 安装定时任务插件 `nb plugin install nonebot-plugin-apscheduler`
-3. 安装go-cqgttp `https://github.com/Mrs4s/go-cqhttp/releases`
-4. 安装schedule `pip install schedule`
-问题：”No module named 'nonebot.adapters.onebot'“
-`pip install nonebot-adapter-onebot`
+3. 安装schedule `pip install schedule`
+4. 安装go-cqhttp [请参阅](https://github.com/Mrs4s/go-cqhttp)
+5. method.py 中修改后端域名
 
-## 如何配置
+*问题 1：”No module named 'nonebot.adapters.onebot'“
+`pip install nonebot-adapter-onebot`*
 
-1. 进入新建文件夹输入 `go-cqhttp` 配置机器人.
-2. 修改config.yml.
-3. 输入 `go-cqhttp` 启动机器人
-4. 解压代码文件并设置相关信息使用 `nb run` 启动.
+### 指令
+私聊器人发送 `/帮助` 查看详细指令
 
-## 文档
+## 参数爬取
+***
+安卓可以使用 HttpCanary
 
-请参阅 [nonebot2 安装与使用](https://blog.csdn.net/a1255652/article/details/117613037)
+ios可以使用 HTTP Catcher
 
-## 指令
-nonebot2 `cd /QQ-bot/InceptionQQbot-master/ ; nb run`
+目标url：```/v2/activity/activities``` 复制响应Body中的d就是参数内容
 
-go-cqhttp `cd /QQ-bot/go-cqhttp/ ; go-cqhttp`
+*注：如果遇到乱码，请检查是否安装了对应的htpps证书*
+## 后端
+***
+### 活动更新检查 - 接口
+```
+GET /dreamActivityApi
+```
 
-定时重启 `cd /QQ-bot/ ; python restart.py`
+#### 请求参数
 
-QQ中私聊或@机器人回复 `/帮助` 查看详细指令
+| 参数名 | 类型   | 必填 | 描述   |
+| ------ | ------ | ---- |------|
+| schoolId | int | 是   | 学校id |
 
-# 插件|到梦空间活动提醒
-通过模拟post请求检查活动
-请求中headers与data需要抓包获取，修改到 “到梦空间活动提醒.py” 中（主设备用户）
-“__init__.py” 中 `@scheduler.scheduled_job('cron', hour=x, minute=xx)` xx是规定了定时执行的时间。`qun = [aaaaaaaa,bbbbbb]` aa...规定了消息提醒的群号。可多个群同时发时延5s每个
+#### 请求示例
 
-# 插件|到梦空间抢活动
-通过模拟post请求发送报名包
-想添加新报名用户需要在目录下的 ”数据“ 文件夹中创建相应名称的txt文件。同时为了保证发送时候不出现堵塞导致报名失败，请在 “config.py” 中增加phoneID类下的headers_Android参数，请保证其数量至少>=报名人数。headers_Apple参数为主设备使用参数。
-“Active_robbery.py” 中 65 与 91 行可以设定不需要进行模拟登陆的人员。（一般来说主设备不要重复登陆）
+```
+GET /dreamActivityApi?schoolId=1001
+```
 
-# 服务器持续运行
-”cd“ 到 ”/QQ-bot/InceptionQQbot-master/“ 执行 `nohup nb run &` 
-”cd“ 到 ”/QQ-bot/go-cqhttp/“ 执行 `nohup go-cqhttp &`
-”cd“ 到 ”/QQ-bot/“ 执行 `nohup python restart.py &`
+#### 响应参数
+
+| 参数名  | 类型             | 描述           |
+| ------- |----------------|--------------|
+| error  | boolean        | 请求是否成功       |
+| school | string         | 学校名称         |
+| admin  | string         | 管理员qq号       |
+| qqGroup | array          | 群发群号         |
+| msg | array / string | 新活动消息 / 错误信息 |
+*注：当error为false时msg为空表示当前时间暂无新活动*
+
+***
+### 查询全学校id与管理员qq号反查 - 接口
+
+```
+GET /dreamActivityApi/query.php
+```
+
+#### 请求参数
+
+| 参数名 | 类型   | 必填  | 描述     |
+| ------ | ------ |-----|--------|
+| qq | string | 否   | 管理员qq号 |
+
+#### 请求示例
+
+```
+GET /dreamActivityApi/query.php?qq=153311...
+```
+
+#### 响应参数
+
+| 参数名  | 类型             | 描述   |
+| ------- |----------------|------|
+| error  | boolean        | 请求是否成功 |
+| uuid | array / string | 学校id |
+
+***
+### d参数更新与关闭活动更新 - 接口
+
+```
+GET /dreamActivityApi/modify.php
+```
+
+#### 请求参数
+
+| 参数名 | 类型   | 必填  | 描述      |
+| ------ | ------ |-----|---------|
+| admin | string | 是   | 管理员qq号  |
+| d | string | 否   | 更新的参数   |
+| close | string | 否   | 开启、关闭更新 |
+*注：close填入任意字符串均可执行，d、close至少填写一个*
+
+#### 请求示例
+
+```
+GET /dreamActivityApi/modify.php?admin=153311...&d=ASIssd1...
+```
+
+#### 响应参数
+
+| 参数名  | 类型             | 描述     |
+| ------- |----------------|--------|
+| error  | boolean        | 请求是否成功 |
+| msg | string | 执行结果   |
+
+## 服务器持续运行
+***
+你可以配合 pm2 来守护进程，防止被杀死，详情询问 ChatGPT。
+
+```restart.py``` 可以帮助你每日重启nonebot2、go-cqhttp
+
+```cd /QQ-bot/InceptionQQbot-master/ && nohup nb run &```
+
+```cd /QQ-bot/go-cqhttp/ && nohup go-cqhttp &```
+
+```cd /QQ-bot/ && nohup python restart.py &```

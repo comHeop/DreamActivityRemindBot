@@ -30,8 +30,7 @@ driver = nonebot.get_driver()
 driver.register_adapter(ONEBOT_V11Adapter)
 
 nonebot.load_builtin_plugins("echo")
-nonebot.load_plugins("cj/到梦空间抢活动")
-nonebot.load_plugins("cj/到梦空间活动提醒")
+nonebot.load_plugins("cj/dream_remind")
 
 
 # Please DO NOT modify this file unless you know what you are doing!
