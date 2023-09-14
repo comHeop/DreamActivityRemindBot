@@ -4,15 +4,24 @@
 
 后端使用php可将前后端分离部署(集群自行配置负载均衡)
 
-目前实现了 支持多校、多群发送、参数失效提醒、参数更新、开关功能
+目前实现了 支持多个校活动获取、多群发送、参数失效提醒、在线参数更新、自定义提醒时段、提醒开关功能
+
+### 前置要求
+
+1. 一个域名
+2. 一台服务器
+3. 可用的到梦空间账号
+4. 一个新QQ或者小号（不建议用大号做机器人有封禁危险）
 
 ### 安装配置
 
 1. 安装nonebot2 [请参阅](https://blog.csdn.net/a1255652/article/details/117613037)
 2. 安装定时任务插件 `nb plugin install nonebot-plugin-apscheduler`
 3. 安装schedule `pip install schedule`
-4. 安装go-cqhttp [请参阅](https://github.com/Mrs4s/go-cqhttp)
-5. method.py 中修改后端域名
+4. 将dream_remind 插件导入 nonebot2 主进程
+5. 在 ```dream_remind -> method.py``` 中修改后端域名
+6. 安装go-cqhttp [请参阅](https://github.com/Mrs4s/go-cqhttp)
+7. 安装 MariaDB 并导入表，根据注释自己进行修改
 
 *问题 1：”No module named 'nonebot.adapters.onebot'“
 `pip install nonebot-adapter-onebot`*

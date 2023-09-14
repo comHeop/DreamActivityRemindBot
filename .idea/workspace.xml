@@ -4,7 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d780135-5220-4cde-b9dd-1178faaf7d3c" name="Changes" comment="标准化" />
+    <list default="true" id="8d780135-5220-4cde-b9dd-1178faaf7d3c" name="Changes" comment="标准化">
+      <change beforePath="$PROJECT_DIR$/.env.dev" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.prod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/dream_remind/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cj/dream_remind/method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/everyday_en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/config - 副本.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/images/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/images/CURRENT.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/images/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/images/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/images/MANIFEST-000007" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/CURRENT.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/leveldb-v3/MANIFEST-000007" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/versions/6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/videos/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/videos/CURRENT.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/videos/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/videos/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/data/videos/MANIFEST-000007" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/device.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/go-cqhttp.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/go-cqhttp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gocq/session.token" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
