@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d780135-5220-4cde-b9dd-1178faaf7d3c" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/cj/dream_remind/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cj/dream_remind/method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/Active_robbery.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/login/唐秀厅.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/login/巫鑫.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/login/杨洪权.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/login/王秀旭.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/唐秀厅.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/巫鑫.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/杨洪权.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间抢活动/数据/王秀旭.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/Active_sql_folder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/config.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/cookieData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/local.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/到梦空间活动提醒/到梦空间活动提醒.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cj/外部插件数据/抢活动结果.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="8d780135-5220-4cde-b9dd-1178faaf7d3c" name="Changes" comment="标准化" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,6 +151,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666791236302</updated>
     </task>
+    <task id="LOCAL-00001" summary="标准化">
+      <created>1694670854041</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694670854041</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +174,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="标准化" />
+    <option name="LAST_COMMIT_MESSAGE" value="标准化" />
   </component>
 </project>
